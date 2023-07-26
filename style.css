@@ -23,4 +23,10 @@
     background-color: rgb(221, 215, 215); 
     margin: 0 auto; 
   }
+
+  .horizontal-line2 {
+    width: 30%;
+    height: 1px;
+    background-color: rgb(196, 196, 196); 
+  }
   
