@@ -58,6 +58,20 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
+
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-40 absolute -left-24">
+                            <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li><div class="lg:hidden flex  bg-white text-gray-400 h-12 w-auto rounded-full">
+
+                            <input type="text" placeholder="Search" class="input  rounded-full w-full max-w-xs" />
+                            <img class="h-5 w-5 mr-3" src="./images/search.png" alt="">
+    
+                        </div></li>
+                          </ul>
+
                     </div>
                     <div class="hidden lg:flex items-center bg-white text-gray-400 h-12 w-auto rounded-full">
 
@@ -76,7 +90,7 @@
 
 
         <!-- banner-section -->
-        <div class="mx-3 my-6 h-72 lg:mx-20 lg:h-96">
+        <div class="mx-3 my-6 h-72 lg:mx-20 lg:h-96 bg-slate-500 relative">
 
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -167,7 +181,7 @@
 
 
                     <div class="relative h-72 w-full lg:h-96  ">
-                        <img src="./images/banner4.png" class="h-72 lg:h-96 w-full" />
+                        <img src="./images/banne.png" class="h-72 lg:h-96 w-full" />
 
                         <!-- Overlay inside the container -->
                         <div class="overlay absolute inset-0 flex justify-center items-center">
@@ -192,10 +206,41 @@
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+                
             </div>
+           
+            <div class="hidden lg:flex bg-white rounded-md py-3 justify-center items-center text-center space-x-10 xl:space-x-24 w-4/5 mx-auto -bottom-14 drop-shadow-lg absolute inset-x-5 z-10">
+               <div class="">
+                <img class="h-20 w-24" src="./images/fruit1.png" alt="">
+                <p class="text-xs text-gray-600">Strawberry</p>
+               </div>
+
+               <div class="">
+                <img class="h-20 w-24" src="./images/fruit2.png" alt="">
+                <p class="text-xs text-gray-600">Orange</p>
+               </div>
+
+               <div class="">
+                <img class="h-20 w-24" src="./images/fruit3.png" alt="">
+                <p class="text-xs text-gray-600">Mango</p>
+               </div>
+
+               <div class="">
+                <img class="h-20 w-24" src="./images/fruit4.png" alt="">
+                <p class="text-xs text-gray-600">Strawberry</p>
+               </div>
+
+               <div class="">
+                <img class="h-20 w-24" src="./images/fruit5.png" alt="">
+                <p class="text-xs text-gray-600">Mango</p>
+               </div>
+
+            </div>
+            
 
         </div>
 
+       
 
     </header>
 
@@ -204,7 +249,7 @@
 
         <!-- card-section -->
         <section>
-            <div class="mx-3 my-6 lg:my-20 lg:mx-20 h-auto ">
+            <div class="mx-3 my-6 lg:mb-20 lg:mt-32 lg:mx-20 h-auto ">
 
                 <div class="lg:flex">
                     <div class="text-center lg:text-start lg:flex-1">
@@ -287,7 +332,7 @@
                             </div>
 
                             <div class="card-actions mt-2">
-                                <button class="text-red-500">Details</button>
+                                <button class="text-red-500" onclick="my_modal_7.showModal()">Details</button>
                             </div>
                         </div>
                     </div>
@@ -300,7 +345,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title mt-2">12.90$ - 18.85$</h2>
                             <div class="horizontal-line"></div>
-                            <p class="text-gray-600 mt-2">Apples</p>
+                            <p class="text-gray-600 mt-2">Orange</p>
 
                             <div class="rating rating-md rating-half">
                                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -327,7 +372,7 @@
                             </div>
 
                             <div class="card-actions mt-2">
-                                <button class="text-red-500">Details</button>
+                                <button class="text-red-500" onclick="my_modal_8.showModal()">Details</button>
                             </div>
                         </div>
                     </div>
@@ -340,7 +385,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title mt-2">12.90$ - 18.85$</h2>
                             <div class="horizontal-line"></div>
-                            <p class="text-gray-600 mt-2">Apples</p>
+                            <p class="text-gray-600 mt-2">Red Dragon</p>
 
                             <div class="rating rating-md rating-half">
                                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -367,7 +412,7 @@
                             </div>
 
                             <div class="card-actions mt-2">
-                                <button class="text-red-500">Details</button>
+                                <button class="text-red-500" onclick="my_modal_9.showModal()">Details</button>
                             </div>
                         </div>
                     </div>
@@ -380,7 +425,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title mt-2">12.90$ - 18.85$</h2>
                             <div class="horizontal-line"></div>
-                            <p class="text-gray-600 mt-2">Apples</p>
+                            <p class="text-gray-600 mt-2">Banana</p>
 
                             <div class="rating rating-md rating-half">
                                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -407,7 +452,7 @@
                             </div>
 
                             <div class="card-actions mt-2">
-                                <button class="text-red-500">Details</button>
+                                <button class="text-red-500" onclick="my_modal_10.showModal()">Details</button>
                             </div>
                         </div>
                     </div>
@@ -516,7 +561,7 @@
 
                 <div class="c-2 lg:hidden mb-6">
 
-                    <img class="h-60 mx-auto w-11/12" src="./images/whychoose1.png" alt="">
+                    <img class="h-60 md:h-96 mx-auto w-11/12" src="./images/whychoose1.png" alt="">
                 </div>
 
                 <div class="lg:flex">
@@ -681,6 +726,110 @@
           </div>
         </div>
       </footer>
+
+
+
+
+
+
+
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_7" class="modal">
+        <form method="dialog" class="modal-box">
+            <div class="text-center space-y-3">
+                <img class="mx-auto" src="./images/fruit6.png" alt="">
+                <h1 class="text-xl font-bold">Apples</h1>
+                <p class="text-sm text-gray-600">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating rating-md">
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+          <div class="modal-action flex justify-center space-x-5">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn border border-orange-600 bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Close</button>
+            <button class="btn bg-orange-600 text-white hover:text-black">Button</button>
+          </div>
+        </form>
+      </dialog>
+
+
+
+
+<dialog id="my_modal_8" class="modal">
+    <form method="dialog" class="modal-box">
+        <div class="text-center space-y-3">
+            <img class="mx-auto" src="./images/fruit7.png" alt="">
+            <h1 class="text-xl font-bold">Orange</h1>
+            <p class="text-sm text-gray-600">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating rating-md">
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+              </div>
+      <div class="modal-action flex justify-center space-x-5">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn border border-orange-600 bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Close</button>
+        <button class="btn bg-orange-600 text-white hover:text-black">Button</button>
+      </div>
+    </form>
+  </dialog>
+
+
+
+
+
+  <dialog id="my_modal_9" class="modal">
+    <form method="dialog" class="modal-box">
+        <div class="text-center space-y-3">
+            <img class="mx-auto" src="./images/fruit8.png" alt="">
+            <h1 class="text-xl font-bold">Red Dragon</h1>
+            <p class="text-sm text-gray-600">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating rating-md">
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+              </div>
+      <div class="modal-action flex justify-center space-x-5">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn border border-orange-600 bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Close</button>
+        <button class="btn bg-orange-600 text-white hover:text-black">Button</button>
+      </div>
+    </form>
+  </dialog>
+
+
+
+
+
+  <dialog id="my_modal_10" class="modal">
+    <form method="dialog" class="modal-box">
+        <div class="text-center space-y-3">
+            <img class="mx-auto" src="./images/fruit9.png" alt="">
+            <h1 class="text-xl font-bold">Banana</h1>
+            <p class="text-sm text-gray-600">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="rating rating-md">
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+              </div>
+      <div class="modal-action flex justify-center space-x-5">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn border border-orange-600 bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Close</button>
+        <button class="btn bg-orange-600 text-white hover:text-black">Button</button>
+      </div>
+    </form>
+  </dialog>
+
 
 
 
